@@ -14,13 +14,12 @@ will place a cropped copy of every image in the /Images folder into /Images_crop
 ### Basic Algorithm
 The idea is to crop off regions that are nearly solid dark from the top and bottom of the image.  The husker looks from the top of the image to the middle of the image and finds the lowest block of all dark rows it can find.  Then it does the same for the bottom of the image.  The assumption is made that the headers are of roughly equal size, and this was sufficient for my use case.
 
-
 ### Parameters
 The other parameters and defaults are as follows:
 
 ```husker.husk(directory, outgoing='/Specific/Directory')```
 
-will place the new images into a directory at this specific path, and will create the directory if it does not yet exist.  The default directory is the incoming directory named tagged with '_cropped'.
+will place the new images into a directory at this specific path, and will create the directory if it does not yet exist.  The default directory is the incoming directory name tagged with '_cropped'.
 
 ```husker.husk(directory, darkness=200)```
 
