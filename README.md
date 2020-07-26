@@ -20,7 +20,7 @@ The other parameters and defaults are as follows:
 
 ```husker.husk(directory, outgoing='/Specific/Directory')```
 
-will place the new images into a directory at this specific path, and will create the directory if it does not yet exist.
+will place the new images into a directory at this specific path, and will create the directory if it does not yet exist.  The default directory is the incoming directory named tagged with '_cropped'.
 
 ```husker.husk(directory, darkness=200)```
 

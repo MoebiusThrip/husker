@@ -55,6 +55,7 @@ def husk(incoming, outgoing=None, darkness=200, block=40, thoroughness=100, exte
     paths = [incoming + '/' + path for path in os.listdir(incoming)]
 
     # crop each path
+    skipped = []
     for path in paths:
 
         # check for extension
@@ -103,6 +104,13 @@ def husk(incoming, outgoing=None, darkness=200, block=40, thoroughness=100, exte
         else:
 
             # ignore
-            print('skipped {}.'.format(path))
+            skipped.append(path)
+
+    # print skipped file
+    print(' ')
+    for path in skipped:
+
+        # print
+        print('skipped {}.'.format(path))
 
     return None
