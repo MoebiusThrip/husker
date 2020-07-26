@@ -9,7 +9,7 @@ Given an image directory path, the husker will crop all images and send them to 
 
 ```husker.husk('/Users/moebiusthrip/Desktop/Images')```
 
-This will place a cropped copy of every image in the /Images folder into /Images_cropped.
+will place a cropped copy of every image in the /Images folder into /Images_cropped.
 
 ### Basic Algorithm
 The idea is to crop off regions that are nearly solid dark from the top and bottom of the image.  The husker looks from the top of the image to the middle of the image and finds the lowest block of all dark rows it can find.  Then it does the same for the bottom of the image.  The assumption is made that the headers are of roughly equal size, and this was sufficient for my use case.
