@@ -28,7 +28,7 @@ sets the highest intensity considered dark at 200, based on the RGB system.  Pit
 
 ```husker.husk(directory, block=40)```
 
-looks for a block of 40 consecutive all dark rows before it will crop it from the image.  Lower values risk that a thin dark horizontal line in the content itself will cause it to crop it there instead.
+looks for a block of 40 consecutive all dark rows before it will crop it from the image.  Lower values risk that a thin dark horizontal line in the content itself will cause it to crop there instead.
 
 ```husker.husk(directory, thoroughness=100)```
 
